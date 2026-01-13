@@ -1,10 +1,10 @@
+int k;
 #include<stdio.h>
 int main(){
 	int i,j,m,n;
 	int k;
 	int arr[100][100];
 	scanf("%d %d",&m,&n);
-	arr[m][n];
 	for(i=0;i<m;i++){
 		for(j=0;j<n;j++){
 			scanf("%d",&arr[i][j]);
@@ -58,8 +58,8 @@ int main(){
 	printf("f) \n");
 	for(i=0;i<m;i++){
 		int x = arr[i][1];
-		arr[i][1] = arr[i][4];
-		arr[i][4] = x;
+		arr[i][1] = arr[i][n];
+		arr[i][n] = x;
 		for(j=0;j<n+1;j++){
 			printf("%d ",arr[i][j]);
 		}
@@ -111,3 +111,4 @@ int main(){
 		printf("\n");
 	}
 }
+
